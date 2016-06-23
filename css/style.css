@@ -2,6 +2,11 @@
   background-image: url("https://assets.about.me/background/users/a/n/t/antonioserna_1411265393_7.jpg");
   background-position: 50% 5%;
 }
+
+.jumbotron p {
+  color: green;
+}
+
 .bottom_bg {
   height:100%;
   width:100%;
