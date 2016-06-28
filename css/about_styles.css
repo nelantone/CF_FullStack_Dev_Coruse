@@ -1,4 +1,81 @@
+* { box-sizing: border-box; }
+
+.bottom_bg {
+  height:100%;
+  width:100%;
+  min-height:500px;
+  margin:0 0 10px;
+  background-image: url("https://assets.about.me/background/users/a/n/t/antonioserna_1411265393_7.jpg");
+  background-position: 50% 70%;
+}
+
+.header {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  margin: 0 70%;
+  text-align: center;
+  opacity: 0.2;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.image {
+  display: inline-block;
+  float: left;
+}
+
+.column { display: inline-block; }
+
+.main-text {
+  clear: both;
+  padding-top: 60px;
+}
+
+.skills.column {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  display: inline-block;
+  color: black;
+  background-color: #C6F6F1;
+  margin-left: 5%;
+  margin-top: 40px;
+}
+
+.skills.column h1 {
+  margin-left: 20px;
+}
+
+.title_inf {
+  text-align: right;
+  display: inline-block;
+  position: relative;
+  margin-left: 3%;
+}
+
+.description {
+  height: 70%;
+  width: 70%;
+  margin-left: 5%;
+}
+
+.projects {
+  height: 70%;
+  width: 70%;
+}
+
+/*Typography*/
+
+h1,
+h2,
+h3 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
 }
