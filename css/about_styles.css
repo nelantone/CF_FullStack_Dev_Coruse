@@ -25,6 +25,7 @@
 .container {
   width: 80%;
   margin: 0 auto;
+  color: #000;
 }
 
 .image {
@@ -44,8 +45,8 @@
   height: 250px;
   position: relative;
   display: inline-block;
-  color: black;
-  background-color: #C6F6F1;
+  color: #FFF;
+  background-color: #5AD4C2;
   margin-left: 5%;
   margin-top: 40px;
 }
@@ -74,8 +75,55 @@
 
 /*Typography*/
 
-h1,
-h2,
-h3 {
-  font-family: Futura, Helvetica, Arial, sans-serif;
+* { font-family: Futura, Helvetica, Arial, sans-serif; }
+
+.intro p {
+  font-size: 2em;
+  font-style: italic;
 }
+
+#skill-list {
+  margin-left: 50px;
+}
+
+body {
+  background-color: #fffeea;
+  color: #34495e;
+}
+
+.container.contact {
+  width: 75%;
+  height:75%;
+  background-image: url("https://c5.staticflickr.com/6/5192/5899011068_67d4ae4dcf_b.jpg");
+  background-position: 50% 50%;
+  margin: 3% auto;
+  min-height:600px;
+}
+
+.contact-square {
+  width: 400px;
+  height: 250px;
+  margin-left: 35%;
+}
+
+#name { text-transform: capitalize; }
+
+body.contact {
+  background-color: #e9e8e5;
+}
+
+.cont {
+  text-align: center;
+}
+
+
+.jumbotron {
+  background-image: url("https://assets.about.me/background/users/a/n/t/antonioserna_1411265393_7.jpg");
+  background-position: 50% 5%;
+}
+
+.jumbotron p {
+  color:#330000;
+}
+
+[href="contact.html"] { color: #000; }
