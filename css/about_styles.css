@@ -7,23 +7,24 @@
   margin:0 0 10px;
   background-image: url("https://assets.about.me/background/users/a/n/t/antonioserna_1411265393_7.jpg");
   background-position: 50% 70%;
+  background-color: black;
 }
 
 .header {
   width: 200px;
   height: 200px;
-  position: fixed;
+  position: absolute;
   display: inline-block;
   background-color: black;
   color: white;
-  margin: 0 70%;
+  margin: 5% 40%;
   text-align: center;
   opacity: 0.2;
     filter: alpha(opacity=20); /* For IE8 and earlier */
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   color: #000;
 }
@@ -43,12 +44,11 @@
 .skills.column {
   width: 250px;
   height: 250px;
-  position: relative;
   display: inline-block;
   color: #FFF;
   background-color: #5AD4C2;
   margin-left: 5%;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .skills.column h1 {
@@ -64,8 +64,9 @@
 
 .description {
   height: 70%;
-  width: 70%;
-  margin-left: 5%;
+  width: 90%;
+  margin-left: 8%;
+  padding: 0 20%;
 }
 
 .projects {
@@ -96,7 +97,7 @@ body {
   height:75%;
   background-image: url("https://c5.staticflickr.com/6/5192/5899011068_67d4ae4dcf_b.jpg");
   background-position: 50% 50%;
-  margin: 3% auto;
+  margin: auto;
   min-height:600px;
 }
 
@@ -113,7 +114,15 @@ body.contact {
 }
 
 .cont {
-  text-align: center;
+  margin-left: 35%;
+}
+
+.cont a:hover {
+  color: #FF8C00;
+  font-variant: bold;
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
 }
 
 
@@ -127,3 +136,70 @@ body.contact {
 }
 
 [href="contact.html"] { color: #000; }
+
+.nav {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+
+.nav ul li {
+  display: inline-block;
+  background-color: black;
+}
+
+.nav ul li a {
+  text-transform: uppercase;
+  letter-spacing:  0.5em;
+  color: white;
+  top: 0;
+  padding: 20px 10px 20px;
+}
+
+.nav ul {
+  display: inline-block;
+  float: right;
+}
+
+.about_bg {
+  height:100%;
+  width:100%;
+  min-height:425px;
+  margin:0 0 10px;
+  background-image: url("https://c2.staticflickr.com/8/7306/27800115020_16df094701_o.jpg");
+  background-repeat: round;
+  background-position: left;
+  background-color: #FAF0E6;
+  display: inline-block;
+}
+
+.nav [href="index.html"] {
+  margin-left: 2%;
+  text-transform: uppercase;
+  letter-spacing:  0.5em;
+  color: white;
+  top: 0;
+}
+
+  .nav a:hover {
+  color: #0EBFE9;
+  text-decoration: none;
+  font-variant: bold;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+body.about { background-color: black;}
+
+.container.about {
+  background-color: white;
+}
+
+.nav.index {
+  display: block;
+  position: absolute;
+}
+
+.nav.index [href="index.html#working_on_it"] {
+  display: none;
+}
