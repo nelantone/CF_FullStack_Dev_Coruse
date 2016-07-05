@@ -124,6 +124,8 @@ body {
   padding: 20px 10px 20px;
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
+  z-index: 1;
+}
 }
 
 .nav ul li {
@@ -187,6 +189,9 @@ body.about { background-color: black; }
 
 body.contact {
   background-color: #e9e8e5;
+  background-image: url("img/formentera.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .contact a:hover {
@@ -198,12 +203,7 @@ body.contact {
  }
 
  .container.contact {
-  width: 75%;
-  height:75%;
-  background-image: url("https://c5.staticflickr.com/6/5192/5899011068_67d4ae4dcf_b.jpg");
-  background-position: 50% 50%;
   margin: 35px auto auto;
-  min-height:600px;
 }
 
 .contact-square {
@@ -212,8 +212,38 @@ body.contact {
   margin-left: 35%;
 }
 
-/**** Contact page ****/
+/**** FAQ page ****/
 
 .container.faq {
   width: 80%;
+}
+
+
+/**** index page ****/
+.container.index {
+  width: 100%;
+  margin: 0 auto;
+  color: #000;
+  display: block;
+  position: absolute;
+  margin-top: 200px;
+  background-color: white;
+  z-index: 1;
+  opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.container.title {
+  width: 100%;
+  margin: 0 auto;
+  color: #000;
+  display: block;
+  position: absolute;
+  text-align: center;
+  margin-top: 70px;
+  z-index: 1;
+}
+
+.carousel-example-generic {
+  margin-top: 200px;
 }
