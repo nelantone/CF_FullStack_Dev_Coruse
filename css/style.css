@@ -41,39 +41,6 @@
   padding-top: 60px;
 }
 
-.skills.column {
-  width: 250px;
-  height: 250px;
-  display: inline-block;
-  color: #FFF;
-  background-color: #5AD4C2;
-  margin-left: 5%;
-  margin-top: 50px;
-}
-
-.skills.column h1 {
-  margin-left: 20px;
-}
-
-.title_inf {
-  text-align: right;
-  display: inline-block;
-  position: relative;
-  margin-left: 3%;
-}
-
-.description {
-  height: 70%;
-  width: 90%;
-  margin-left: 8%;
-  padding: 0 20%;
-}
-
-.projects {
-  height: 70%;
-  width: 70%;
-}
-
 /*Typography*/
 
 * { font-family: Futura, Helvetica, Arial, sans-serif; }
@@ -81,10 +48,6 @@
 .intro p {
   font-size: 2em;
   font-style: italic;
-}
-
-#skill-list {
-  margin-left: 50px;
 }
 
 body {
@@ -126,7 +89,6 @@ body {
   filter: alpha(opacity=80); /* For IE8 and earlier */
   z-index: 1;
 }
-}
 
 .nav ul li {
   display: inline-block;
@@ -143,18 +105,6 @@ body {
 .nav ul {
   display: inline-block;
   float: right;
-}
-
-.about_bg {
-  height:100%;
-  width:100%;
-  min-height:425px;
-  margin:0 0 10px;
-  background-image: url("https://c2.staticflickr.com/8/7306/27800115020_16df094701_o.jpg");
-  background-repeat: round;
-  background-position: left;
-  background-color: #FAF0E6;
-  display: inline-block;
 }
 
 .nav [href="index.html"],
@@ -175,6 +125,59 @@ body {
   font-variant: bold;
   transition: color 600ms;
   -webkit-transition: color 600ms;
+}
+
+/**** About page ****/
+
+#skill-list {
+  margin-left: 50px;
+}
+
+
+.skills.column {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  color: #FFF;
+  background-color: #5AD4C2;
+  margin-left: 5%;
+  margin-top: 50px;
+}
+
+.skills.column h1 {
+  margin-left: 20px;
+}
+
+.title_inf {
+  text-align: right;
+  display: inline-block;
+  position: relative;
+  margin-left: 3%;
+}
+
+.description {
+  height: 70%;
+  width: 90%;
+  margin-left: 8%;
+  padding: 0 20%;
+}
+
+.projects {
+  height: 70%;
+  width: 70%;
+}
+
+
+.about_bg {
+  height:100%;
+  width:100%;
+  min-height:425px;
+  margin:0 0 10px;
+  background-image: url("https://c2.staticflickr.com/8/7306/27800115020_16df094701_o.jpg");
+  background-repeat: round;
+  background-position: left;
+  background-color: #FAF0E6;
+  display: inline-block;
 }
 
 body.about { background-color: black; }
