@@ -3,7 +3,7 @@
 .bottom_bg {
   height:100%;
   width:100%;
-  min-height:500px;
+/*  min-height:500px;*/
   margin:0 0 10px;
   background-image: url("https://assets.about.me/background/users/a/n/t/antonioserna_1411265393_7.jpg");
   background-position: 50% 70%;
@@ -36,9 +36,10 @@
 
 .column { display: inline-block; }
 
-.main-text {
+#about-me {
   clear: both;
-  padding-top: 60px;
+  padding-top: 50px;
+  padding-bottom: 30%;
 }
 
 /*Typography*/
@@ -48,11 +49,6 @@
 .intro p {
   font-size: 2em;
   font-style: italic;
-}
-
-body {
-  background-color: #fffeea;
-  color: #34495e;
 }
 
 .cont {
@@ -82,16 +78,13 @@ body {
 .nav {
   background-color: black;
   position: fixed;
-  display: block;
-  width: 100%;
-  padding: 20px 10px 20px;
+/*  display: block;*/
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
   z-index: 1;
 }
 
 .nav ul li {
-  display: inline-block;
   background-color: black;
 }
 
@@ -99,7 +92,6 @@ body {
   text-transform: uppercase;
   letter-spacing:  0.5em;
   color: white;
-  top: 0;
 }
 
 .nav ul {
@@ -107,8 +99,7 @@ body {
   float: right;
 }
 
-.nav [href="index.html"],
-.nav [href="/"]
+.nav [href="#home"]
 /*"/" to make work index css on bitballoon*/
  {
   text-transform: uppercase;
@@ -168,18 +159,19 @@ body {
 
 
 .about_bg {
+  background-attachment: fixed;
   height:100%;
   width:100%;
   min-height:425px;
   margin:0 0 10px;
   background-image: url("https://c2.staticflickr.com/8/7306/27800115020_16df094701_o.jpg");
-  background-repeat: round;
-  background-position: left;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #FAF0E6;
   display: inline-block;
 }
 
-body.about { background-color: black; }
+.about { background-color: black; }
 
 .container.about {
   background-color: white;
@@ -197,10 +189,6 @@ body.about { background-color: black; }
   -webkit-transition: color 600ms;
  }
 
- .container.contact {
-  margin: 35px auto auto;
-}
-
 .contact-square {
   width: 400px;
   height: 250px;
@@ -208,13 +196,15 @@ body.about { background-color: black; }
 }
 
 .all-content.contact {
-  padding-top: 200px;
+  background-attachment: fixed;
+  padding-top: 70px;
+  padding-bottom: 30%;
   margin-top: 0px;
   width: 100%;
   height:100%;
   background-color: #e9e8e5;
   background-image: url("https://c2.staticflickr.com/6/5192/5899011068_65171b330b_o.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -226,6 +216,17 @@ body.about { background-color: black; }
 
 
 /**** index page ****/
+body {
+  position: relative;
+  background-color: #fffeea;
+  color: #34495e;
+}
+
+.sections {
+  padding-top: 50px;
+  padding-bottom: 20%
+}
+
 .container.index {
   width: 100%;
   margin: 0 auto;
@@ -250,10 +251,32 @@ body.about { background-color: black; }
   z-index: 1;
 }
 
+#working_on_it {
+  padding-top: 75px;
+}
+
+.projectName {
+    text-transform: uppercase;
+}
+
+.projectName a {
+    color: white;
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 5px;
+  }
+
+.navbar-nav {
+  margin: 0 0 0 -15px;
+}
+
+/*****Media*****/
 
 @media (max-width: 990px) {
   .all-content {
-  padding-top: 200px;
+  padding-top: 50px;
   }
 
   .container.contact {
@@ -273,4 +296,31 @@ body.about { background-color: black; }
     margin: 0 auto;
     font-size: 25px;
   }
+
+  .container.index {
+  position: relative;
+  display: block;
+  }
+
+  .all-content.contact {
+    padding-top: 0px;
+    padding-bottom: 100%;
+  }
+
+  .contact-square {
+    background-color: white;
+    padding-left: 20px;
+    z-index: 1;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+  }
+
+  .contact-square h1{
+    font-size: 20px;
+
+  }
+  #name h3{
+    font-size: 15px;
+  }
+  .navbar-nav { margin
 }

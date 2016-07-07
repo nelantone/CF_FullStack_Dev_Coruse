@@ -10,8 +10,6 @@
     <title>Antonio Serna Gutierrez, Jr. Ruby on Rails Developer</title>
 
     <!-- Bootstrap core CSS -->
-
-
     <!-- Custom styles for this template go here -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -19,25 +17,54 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="nav index">
+  <body data-spy="scroll" data-target=".navbar">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <nav class="nav navbar navbar-inverse navbar-fixed-top navbar-right" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="projectName navbar-brand">
+              <a href="#">nelantone</a>
+            </div> <!--end projectName -->
+        </div> <!--end navbar-header -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about-me">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#work-section">Work</a></li>
+              <li><a href="#faq-section">Faq</a></li>
+          </ul>
+        </div> <!-- nav -->
+      </div> <!-- end nav container-->
+    </nav> <!-- end navbar-->
+    <!-- <div class="nav index navbar">  <nav class="nav index navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class= "col-md-2 col-xs-12">
-        <a href="index.html">Home</a>
+        <a href="#home">Home</a>
       </div>
       <ul class= "col-md-2 col-xs-12">
-        <li><a href="about.html">About</a></li>
+        <li><a href="#about-me">About</a></li>
       </ul>
       <ul class= "col-md-2 col-xs-12">
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <ul class= "col-md-2 col-xs-12">
-        <li><a href="about.html">Work</a></li>
+        <li><a href="#work-section">Work</a></li>
       </ul>
       <ul class= "col-md-2 col-xs-12">
-        <li><a href="faq.html">Faq</a></li>
+        <li><a href="#faq-section">Faq</a></li>
       </ul>
+    </div> -->
+    <div id="home">
     </div>
-    <div class="all-content">
+    <div class="all-content sections" >
       <div class="container title">
         <h1>Antonio Serna Gutierrez</h1>
         <p><strong><i>Full stack Junior Web Developer specialized in Ruby on Rails</i></strong></p>
@@ -99,28 +126,177 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <div class="container faq sections" id="faq-section">
+      <br><br><br>
+      <h3>FAQ</h3>
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#missingcode" href="#collapseOne"><span class="glyphicon glyphicon-flag"></span>
+                Why did I decide to become a web developer?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              My story starts very early, on 1997 I was a teenager that spended some months playing with HTML and JS.
+              It was a hobbie that I enjoyed a lot. Then I stopped on 2001 because I started to study Economics.
+              I still did like it to do websites and play a bit. But I never tought that I can live doing websites.
+              I've learnt some Flash on 2002 and was doing websites for friends. I finaly finish my masters-degree
+              I worked in Consulting, Marketing and PR. I realize that I was not satisfied working in these fields
+              that I need something more challenging, that will fit better with me and something that can I can be
+              passionate and also something that can give me at some level a lot of freedom and even be able to do
+              my own Start-up. All the ways where going to web developement. That's how my path on Web Developement
+              started in February 2014 as a Ruby Intern and
+              in February 2015 as Ruby on Rails Junior Developer.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-plus"></span>
+                How can I help you in your projects/company?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              I have good knowledge in Ruby and some knowledge in Rails. Nowadays I'm doind an intensive course in
+              Carrierfoundry to master my skills and be a complete Full Stack Webdeveloper
+              My level in some technologies:
+              Ruby: medium-high
+              Rails: medium
+              Rspec: basic
+              Git: high
+              JS: basic
+              CSS: medium-high
+              HTML: medium-high
+              Linux: medium *Nowadays I'm a linux user but I was also working with Mac.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#missingcode" href="#collapseThree"><span class="glyphicon glyphicon-user"></span>
+                Who are my future clients?”
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              I would like to start with little projects or also been part of a Start-up with Senior Developers that I can learn and go futher in
+              my knowledege.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="work-section">
+      <br><br><br><br>
+    </div>
+    <class="about">
+      <div class="all-content">
+        <div class="header">
+          <br>
+          <h1>Portfolio <br> and <br>about me</h1>
+        </div><!-- end class header -->
+        <div class="about_bg" >
+        </div><!-- end class about_bg -->
+        <div class="container about">
+          <div class="projects">
+            <h1>Projects</h1>
+            <ul>
+              <li><a href = 'https://github.com/nelantone' >Github account:</a>
+                I was working in some Ruby basic little programs and in my first rails app (link below)<br><br></li>
+              <li>
+                <a href = "https://mosaikfilmer.herokuapp.com" >MosaikFilmer</a>: My first made by my own Rails App from scratch.
+                <br> I just had some Senior Developers basic support in some hard task problems and basic testing, it's on beta version.
+                <br><i>'An app for rate, comment and manage all your favorite movies'</i>
+                <br>
+              <div class="mosaik-imgs">
+                <a href = "https://mosaikfilmer.herokuapp.com"><img src= "img/mosaikfilmer_s.jpg" alt="MosaikFilmer" id="mosaik1"></a>
+                <a href = "https://mosaikfilmer.herokuapp.com"><img src= "img/mosaikfilmer_s2.jpg" alt="MosaikFilmer" id="mosaik2"></a><br><br>
+              </div><!-- end mosaik-imgs -->
+              </li>
+              <li><a href="http://about.me/antonioserna">about.me/antonioserna</a><br><br></li>
+              <li>I'm still working on it...</li>
+            </ul>
+          </div><!-- end projects -->
+          <div class=“about-section sections” id="about-me">
+            <h1>About me</h1>
+            <div class="intro">
+              <p>
+                Optimist, persistent, multicultural and always ready for changes.
+              </p>
+            </div> <!-- end intro -->
+            <div class="image">
+              <img src="img/anto_2.jpg" alt="Just me">
+            </div><!-- end image -->
+            <h2 class="title_inf">
+              More info about me
+            </h2>
+            <div class="intro column">
+              <div class="skills column">
+                <h1>I'm also...</h1>
+                <br>
+                <ul id="skill-list">
+                  <li><h4>Economist</h4><br></li>
+                  <li><h4>Junior Web Developer</h4><br></li>
+                </ul>
+              </div><!-- end skills column -->
+            </div><!-- end intro column -->
+            <h5 class="description">
+            <br>
+            <br>
+            I like to know people, travel, languages, understand the problems in the economy, to motivate others,
+            laugh, dance, swim, music, photography (even I don't have a proper camera but someday soon).
+            <br>
+            <br>
+            I'm some 25% Mexican, 35% Spanish and the rest it is mostly mixed and scrambled with Europeans, Northamericas,
+            Latinamericans and random people whitout specially
+            any clear flag or belong feeling.
+            <br>
+            <br>
+            As studies I'm economist and nowadays I'm on the path to be a Junior Full Stack Web Developer in Ruby on Rails.
+            I did and try some different fields, Marketing, PR, Economics, Services sector, Consulting and right now Web
+            Development that is now is one of my hobbies.
+            <br><br>
+            My idea is create in few years a human valuable Startup with some amazing people.
+            <br>
+            <br>
+            </h5>
+          </div><!-- end about-section-->
+        </div><!-- end container -->
+      </div><!-- /all-content -->
+      <div class="all-content contact" id="contact">
+        <div class="container contact">
+          <div class="contact-square">
+            <h1>Contact</h1>
+            <div id="name">
+              <h3>antonio serna gutierrez<h3>
+            </div><!-- /name -->
+              <a href="http://about.me/antonioserna"><span class="glyphicon glyphicon-globe"></span> &nbsp; about.me/antonio-serna</a>
+              <br>
+              <br>
+              <span class="glyphicon glyphicon-send"></span> &nbsp; antonelo(at)gmail.com
+              <br>
+              <br>
+               <span class="glyphicon glyphicon-phone"></span>  &nbsp; +49 1573 622 28 57
+              <br>
+              <br>
+            <div id="address">
+              <span class="glyphicon glyphicon-map-marker"></span>&nbsp; Kreuzberg, Berlin
+              <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Germany
+            </div><!-- /address -->
+          </div><!-- contact-square -->
+        </div><!-- end container contact -->
+      </div><!-- /all-content -->
       <div id="working_on_it">
-      <br>
-      <br>
-      <br>
-      <br>
       <h2>Working on it...</h2>
       <br>
       <div class="bottom_bg">
@@ -141,5 +317,17 @@
     <!-- Can place script tags with JavaScript files here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!-- Jquery -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><!-- Bootstrap core JS -->
-    </body>
+    <script type="text/javascript">
+      var $root = $('html, body');
+        $('.navbar-nav a').click(function() {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+            return false;
+        });
+    </script>
+  </body>
 </html>
