@@ -284,7 +284,8 @@ body {
   }
 
   #mosaik1,
-  #mosaik2 {
+  #mosaik2,
+  #blog1 {
     height: 90%;
     width: 90%;
   }
