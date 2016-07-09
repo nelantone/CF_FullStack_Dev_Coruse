@@ -264,12 +264,18 @@ body {
 }
 
 .navbar-toggle {
-  float: left;
+  float: inherit;
   margin-left: 5px;
   }
 
 .navbar-nav {
   margin: 0 0 0 -15px;
+}
+
+footer{
+  display: block;
+  margin: auto;
+  width: 50%;
 }
 
 /*****Media*****/
@@ -323,5 +329,9 @@ body {
   #name h3{
     font-size: 15px;
   }
-  .navbar-nav { margin
+
+  footer{
+  display: block;
+  margin: 0;
+  }
 }
