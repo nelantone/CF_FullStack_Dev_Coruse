@@ -208,6 +208,13 @@
   background-repeat: no-repeat;
 }
 
+#name,
+#email,
+.message-box {
+  opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
 /**** FAQ page ****/
 
 .container.faq {
@@ -278,6 +285,16 @@ footer{
   width: 50%;
 }
 
+.form-control{
+  width: 70%;
+}
+
+.form-group {
+  display: inline-block;
+  position: absolute;
+  float: left;
+}
+
 /*****Media*****/
 
 @media (max-width: 990px) {
@@ -320,6 +337,10 @@ footer{
     z-index: 1;
     opacity: 0.7;
     filter: alpha(opacity=70); /* For IE8 and earlier */
+  }
+
+  .form-group {
+    padding-left: 200px;
   }
 
   .contact-square h1{

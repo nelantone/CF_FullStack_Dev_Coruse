@@ -49,7 +49,7 @@
             </div> <!--end projectName -->
         </div> <!--end navbar-header -->
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav">
               <li><a href="#home">Home</a></li>
               <li><a href="#about-me">About</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -60,7 +60,7 @@
       </div> <!-- end nav container-->
     </nav> <!-- end navbar-->
     <!-- <div class="nav index navbar">  <nav class="nav index navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class= "col-md-2 col-xs-12">
+      <div class= "s-md-2 col-xs-12">
         <a href="#home">Home</a>
       </div>
       <ul class= "col-md-2 col-xs-12">
@@ -291,7 +291,7 @@
       </div><!-- /all-content -->
       <div class="all-content contact" id="contact">
         <div class="container contact">
-          <div class="contact-square">
+          <div class="contact-square col-lg-8 col-md-8">
             <h1>Contact</h1>
             <div id="name">
               <h3>antonio serna gutierrez<h3>
@@ -308,9 +308,24 @@
             <div id="address">
               <span class="glyphicon glyphicon-map-marker"></span>&nbsp; Kreuzberg, Berlin
               <br>
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Germany
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Germany
             </div><!-- /address -->
           </div><!-- contact-square -->
+          <form>
+            <br>
+            <div class="form-group col-lg-8 col-md-8" >
+              <h1>Contact-box</h1>
+              <label for="name" >Name</label>
+              <input type="textBox" id="name" required=”required” minlength=3>
+              <br>
+              <label for="email">Email</label>
+              <input type="email" id="email" required=”required” minlength=5>
+              <br>
+              <textarea style="resize:none" cols="40" rows="5" placeholder="Your message here" class="message-box" minlength=10></textarea>
+              <br>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </form>
         </div><!-- end container contact -->
       </div><!-- /all-content -->
       <div id="working_on_it">
