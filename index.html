@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -22,66 +23,56 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         appId      : 'your-app-id',
+         xfbml      : true,
+         version    : 'v2.6'
+       });
+     };
+
+     (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+   </script>
   </head>
   <body data-spy="scroll" data-target=".navbar">
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <nav class="nav navbar navbar-inverse navbar-fixed-top navbar-right" role="navigation">
+    <nav class="nav navbar navbar-inverse navbar-fixed-top" >
       <div class="container-fluid">
         <div class="navbar-header">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-            data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="projectName navbar-brand">
-              <a href="#">nelantone</a>
-            </div> <!--end projectName -->
+          <button type="button" class="navbar-toggle navbar-right" data-toggle="collapse"
+          data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div> <!--end navbar-header -->
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
               <li><a href="#home">Home</a></li>
               <li><a href="#about-me">About</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="#work-section">Work</a></li>
-              <li><a href="#faq-section">Faq</a></li>
+              <li><a href="#faq-section">More</a></li>
           </ul>
         </div> <!-- nav -->
       </div> <!-- end nav container-->
     </nav> <!-- end navbar-->
-    <!-- <div class="nav index navbar">  <nav class="nav index navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class= "s-md-2 col-xs-12">
-        <a href="#home">Home</a>
-      </div>
-      <ul class= "col-md-2 col-xs-12">
-        <li><a href="#about-me">About</a></li>
-      </ul>
-      <ul class= "col-md-2 col-xs-12">
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <ul class= "col-md-2 col-xs-12">
-        <li><a href="#work-section">Work</a></li>
-      </ul>
-      <ul class= "col-md-2 col-xs-12">
-        <li><a href="#faq-section">Faq</a></li>
-      </ul>
-    </div> -->
     <div id="home">
     </div>
     <div class="all-content sections" >
       <div class="container title">
         <h1>Antonio Serna Gutierrez</h1>
-        <p><strong><i>Full stack Junior Web Developer specialized in Ruby on Rails</i></strong></p>
+        <div id="sml-title">
+          <strong><i>Full stack Junior Web Developer specialized in Ruby on Rails</i></strong>
+        </div><!-- end sml-title -->
       </div><!-- /container -->
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -139,11 +130,30 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+      <div id="faq-section">
+      </div>
+    </div><!-- end all content sections -->
+    <div class="row.faq">
+      <h2 class="learn-more">Learn More</h2>
+      <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" data-backdrop="static"  data-keyboard="false">My CV</button>
+      <div class="modal-button"></div>
     </div>
-    <div class="container faq sections" id="faq-section">
-      <br><br><br>
-      <h3>FAQ</h3>
-      <br>
+    <br>
+    <div class="container faq" >
+      <!-- Small modal -->
+      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content" data-stellar-background-ratio="0.5" >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Resume</h4>
+            </div>
+            <div class="modal-body" >
+              <embed id="CV-Resume" src="antonio_serna_CV_2016.pdf" >
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -237,6 +247,7 @@
               </div><!-- end mosaik-imgs -->
               </li>
               <li><a href = "http://haciendoberlin.blogspot.de/" >Haciendo Berlin Blog</a>: My blog about programing (Right now only in Spanish).
+                <br>
                 <a href = "http://haciendoberlin.blogspot.de/"><img src= "img/blog.jpg" alt="Blog" id="blog1"></a><br><br>
               </li>
               <li><a href="http://about.me/antonioserna">about.me/antonioserna</a><br><br></li>
@@ -313,7 +324,7 @@
           </div><!-- contact-square -->
           <form>
             <br>
-            <div class="form-group col-lg-8 col-md-8" >
+            <div class="form-group col-lg-4 col-md-10" >
               <h1>Contact-box</h1>
               <label for="name" >Name</label>
               <input type="textBox" id="name" required=”required” minlength=3>
@@ -331,7 +342,7 @@
       <div id="working_on_it">
       <h2>Working on it...</h2>
       <br>
-      <div class="bottom_bg">
+      <div class="bottom_bg" data-stellar-background-ratio="0.5">
           <div class="container">
               <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br>
             </div><!-- /cont -->
@@ -368,6 +379,14 @@
     <!-- Can place script tags with JavaScript files here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!-- Jquery -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><!-- Bootstrap core JS -->
+    <script src="js/jquery.stellar.min.js" ></script>
+    <script>
+      $(window).stellar()
+      $.stellar({
+        horizontalOffset:60,
+        verticalOffset: 100
+      });
+    </script>
     <script type="text/javascript">
       var $root = $('html, body');
         $('.navbar-nav a').click(function() {
