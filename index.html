@@ -56,11 +56,11 @@
         </div> <!--end navbar-header -->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about-me">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#home">NELANTONE</a></li>
               <li><a href="#work-section">Work</a></li>
               <li><a href="#faq-section">More</a></li>
+              <li><a href="#about-me">About</a></li>
+              <li><a href="#contact">Contact</a></li>
           </ul>
         </div> <!-- nav -->
       </div> <!-- end nav container-->
@@ -134,7 +134,7 @@
       </div>
     </div><!-- end all content sections -->
     <div class="row.faq">
-      <h2 class="learn-more">Learn More</h2>
+      <h1 class="learn-more">Learn More</h1>
       <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" data-backdrop="static"  data-keyboard="false">My CV</button>
       <div class="modal-button"></div>
     </div>
@@ -219,18 +219,17 @@
         </div>
       </div>
     </div>
-    <div id="work-section">
-      <br><br><br><br>
-    </div>
+    <div id="work-section"></div>
+    <br><br><br><br>
     <class="about">
       <div class="all-content">
         <div class="header">
           <br>
-          <h1>Portfolio <br> and <br>about me</h1>
+          <h1><br>Portfolio</h1>
         </div><!-- end class header -->
-        <div class="about_bg" >
-        </div><!-- end class about_bg -->
         <div class="container about">
+          <div class="about_bg" >
+          </div><!-- end class about_bg -->
           <div class="projects">
             <h1>Projects</h1>
             <ul>
@@ -253,31 +252,25 @@
               <li><a href="http://about.me/antonioserna">about.me/antonioserna</a><br><br></li>
               <li>I'm still working on it...</li>
             </ul>
-          </div><!-- end projects -->
-          <div class=“about-section sections” id="about-me">
-            <h1>About me</h1>
-            <div class="intro">
-              <p>
-                Optimist, persistent, multicultural and always ready for changes.
-              </p>
-            </div> <!-- end intro -->
-            <div class="image">
-              <img src="img/anto_2.jpg" alt="Just me">
-            </div><!-- end image -->
-            <h2 class="title_inf">
-              More info about me
-            </h2>
-            <div class="intro column">
-              <div class="skills column">
-                <h1>I'm also...</h1>
-                <br>
-                <ul id="skill-list">
-                  <li><h4>Economist</h4><br></li>
-                  <li><h4>Junior Web Developer</h4><br></li>
-                </ul>
-              </div><!-- end skills column -->
-            </div><!-- end intro column -->
-            <h5 class="description">
+            </div><!-- end projects -->
+          </div>
+        </div><!-- end container -->
+      </div><!-- /all-content -->
+      <div class=“about-section” id="about-me">
+        <div class="bg-about" data-stellar-background-ratio="0.7">
+          <br><br>
+          <h1>About me</h1>
+          <br>
+          <div class="intro">
+            <p>
+              Optimist, persistent, multicultural and always ready for changes.
+            </p>
+          </div> <!-- end intro -->
+          <div class="image">
+            <img src="img/anto_2.jpg" alt="Just me">
+          </div><!-- end image -->
+          <div class="description">
+            <h5>
             <br>
             <br>
             I like to know people, travel, languages, understand the problems in the economy, to motivate others,
@@ -295,11 +288,20 @@
             <br><br>
             My idea is create in few years a human valuable Startup with some amazing people.
             <br>
-            <br>
             </h5>
-          </div><!-- end about-section-->
-        </div><!-- end container -->
-      </div><!-- /all-content -->
+            <br>
+            I'm also...
+            <br>
+            <br>
+            <ul>
+              <li>Economist<br></li>
+              <li>Junior Web Developer<br></li>
+            </ul>
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+        </div><!-- end class description -->
+      </div><!-- end about-section-->
       <div class="all-content contact" id="contact">
         <div class="container contact">
           <div class="contact-square col-lg-8 col-md-8">
@@ -340,7 +342,7 @@
         </div><!-- end container contact -->
       </div><!-- /all-content -->
       <div id="working_on_it">
-      <h2>Working on it...</h2>
+      <h1>Working on it...</h1>
       <br>
       <div class="bottom_bg" data-stellar-background-ratio="0.5">
           <div class="container">
@@ -382,10 +384,9 @@
     <script src="js/jquery.stellar.min.js" ></script>
     <script>
       $(window).stellar()
-      $.stellar({
-        horizontalOffset:60,
-        verticalOffset: 100
-      });
+      // $.stellar({
+      //   verticalOffset: 100
+      // });
     </script>
     <script type="text/javascript">
       var $root = $('html, body');
