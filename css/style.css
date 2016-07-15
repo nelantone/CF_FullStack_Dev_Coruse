@@ -24,8 +24,8 @@
 
 .container {
   width: 100%;
-/*  margin: 0 auto;*/
   color: #000;
+  position: relative;
 }
 
 .image {
@@ -72,8 +72,8 @@
 }
 
 .nav {
+  display: inline-block;
   background-color: black;
-  position: fixed;
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
   z-index: 1;
@@ -89,17 +89,27 @@
   color: white;
 }
 
-.nav ul {
-  display: inline-block;
-  float: right;
-}
-
 .nav a:hover {
   color: #0EBFE9;
   text-decoration: none;
   font-variant: bold;
   transition: color 600ms;
   -webkit-transition: color 600ms;
+}
+
+.nelantone {
+  padding-top: 15px;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.nelantone a {
+  position: absolute;
+  position: fixed;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.5em;
 }
 
 /**** About page ****/
@@ -157,12 +167,11 @@
 .about_bg {
   height:100%;
   width:100%;
-  min-height:425px;
+  background-attachment: fixed;
   margin:0 0 10px;
-  background-image: url("https://c2.staticflickr.com/8/7306/27800115020_16df094701_o.jpg");
-  background-repeat: round;
+  background-image: url("http://nelantone.bitballoon.com/img/bln_about_bg.jpg");
+  background-repeat: no-repeat;
   background-position: center;
-  background-color: black;
   display: inline-block;
 }
 
@@ -255,14 +264,6 @@ body {
   padding-top: 75px;
 }
 
-.projectName {
-    text-transform: uppercase;
-}
-
-.projectName a {
-    color: white;
-}
-
 footer{
   display: block;
   margin: auto;
@@ -320,8 +321,8 @@ h1.learn-more {
 
   .navbar-nav {
     margin: 0 0 0 -15px;
-    margin-left: 80%;
-  }
+/*    margin-left: 80%;*/
+/*  }*/
 
   .all-content {
   padding-top: 50px;
@@ -394,6 +395,10 @@ h1.learn-more {
     height: 100%;
   }
 
+  .all-content {
+    padding-top: 800px;
+    }
+
   .navbar-toggle {
     float: inherit;
     margin-left: 5px;
@@ -401,7 +406,7 @@ h1.learn-more {
 
   .navbar-nav {
     width: 100%;
-    margin: 0 0 0 -15px;
+    margin-left: -15px;
   }
 
   .nav {
