@@ -137,7 +137,7 @@ body {
 
 /**** Contact page ****/
 
-#name { text-transform: capitalize; }
+#name h3 { text-transform: capitalize; }
 
 .contact a:hover {
   color: black;
@@ -250,7 +250,7 @@ footer{
     font-size: 25px;
   }
 
-  .all-content {
+  .project-content {
   padding-top: 50px;
   }
 
@@ -338,7 +338,7 @@ footer{
   }
 
   /***index***/
-  .all-content {
+  .project-content {
     padding-top: 800px;
     }
 
