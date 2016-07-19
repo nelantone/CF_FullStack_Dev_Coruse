@@ -47,12 +47,21 @@ $(document).ready(function(){
     Grid.init();
   });
 
+  // Button
   $("#button").on("click", function() {
     console.log("clicked");
     var comment = $(".message-box").val();
-    console.log(comment.toUpperCase());
-    $("#visible-comment").html(comment);
-    alert("We have recieved your message! Thanks :)")
+    var name = $("#name").val();
+    if(comment == "") {
+      $(".message-box").css("border-color", "red")
+    } else {
+      // show value
+      $("#visible-comment").html(comment);
+      // hide comments
+      $(".message-box").hide("slow", function() {
+        alert("I have recieved your message! Thanks " + name + " :)");
+      });
+    }
     return false;
   });
 });
