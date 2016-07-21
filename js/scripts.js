@@ -20,6 +20,31 @@ window.fbAsyncInit = function() {
 var bg_project_color = $(".project-content");
 bg_project_color.css("background-color","#6B8E23");
 
+// Gmaps
+var map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 52.5064981, lng: 13.3874326},
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID,
+    heading: 90,
+    tilt: 45
+  });
+}
+
+function rotate90() {
+  var heading = map.getHeading() || 0;
+  map.setHeading(heading + 90);
+}
+
+function autoRotate() {
+  // Determine if we're showing aerial imagery.
+  if (map.getTilt() !== 0) {
+    window.setInterval(rotate90, 3000);
+  }
+}
+
 // Load in the end when DOM is ready
 $(document).ready(function(){
   // Smooth scrolling

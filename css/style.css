@@ -211,6 +211,12 @@ body {
   display: inline-block;
   position: absolute;
   float: left;
+  padding-right: 13%;
+}
+
+#map {
+  height: 170px;
+  width: 100%
 }
 
 /**** FAQ & Learn-more page ****/
