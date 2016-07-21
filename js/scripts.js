@@ -52,8 +52,20 @@ $(document).ready(function(){
     console.log("clicked");
     var comment = $(".message-box").val();
     var name = $("#name").val();
-    if(comment == "") {
-      $(".message-box").css("border-color", "red")
+    var emailID = $("#email").val();
+      atpos = emailID.indexOf("@");
+      dotpos = emailID.lastIndexOf(".");
+
+    if( name == "" || $("#name").val().length < 3) {
+     alert( "Please provide your name and with more than 3 characters" );
+     $("#name").focus() ;
+     return false;
+    } if (atpos < 1 || ( dotpos - atpos < 2 ) || $("#email").val().length <= 7) {
+     alert( "Please provide a correct email" );
+     $("#email").focus() ;
+     return false;
+    } if(comment == "") {
+    $(".message-box").css("border-color", "red")
     } else {
       // show value
       $("#visible-comment").html(comment);
