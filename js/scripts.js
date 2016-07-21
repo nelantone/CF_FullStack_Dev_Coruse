@@ -72,6 +72,13 @@ $(document).ready(function(){
     Grid.init();
   });
 
+  // Counter
+  $(".message-box").on("keyup", function() {
+    console.log("keyup happened");
+    var charCount = $(".message-box").val().length;
+    $("#char-count").html(charCount);
+  });
+
   // Button
   $("#button").on("click", function() {
     console.log("clicked");
