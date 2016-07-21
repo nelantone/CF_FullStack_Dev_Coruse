@@ -17,8 +17,11 @@ window.fbAsyncInit = function() {
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
 
+// Project color Style in JS
 var bg_project_color = $(".project-content");
-bg_project_color.css("background-color","#6B8E23");
+bg_project_color.css("background-color","black");
+$(".project-content h1").css("color", "white");
+$(".project-content h5").css("color", "white");
 
 // Gmaps
 var map;
@@ -57,6 +60,11 @@ $(document).ready(function(){
       window.location.hash = href;
     });
     return false;
+  });
+
+  //Hide when click and colapse .nav
+  $('.nav a').on('click', function(){
+    $('.navbar-toggle').click()
   });
 
   // Stellar
