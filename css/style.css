@@ -43,7 +43,15 @@
   letter-spacing: 0.5em;
 }
 
+.navbar-right a[href="#contact"] {
+  margin-right: 4px;
+}
+
 /**** index page ****/
+
+.row {
+  padding-top: 70px;
+}
 
 .carousel-caption {
   max-width: 550px;
@@ -320,8 +328,8 @@ footer{
 }
 
 iframe {
-  width: 40%;
-  height: 40%;
+  width: 100%;
+  height: 30%;
 }
 
 /*****Typography*****/
@@ -469,18 +477,7 @@ iframe {
     filter: alpha(opacity=00); /* For IE8 and earlier */
   }
 
-  /*** end and bottom section***/
-  iframe {
-    width:  70%;
-    height: 100%;
-  }
-
-  .end_bg {
-    background-position: 550px 400px;
-  }
-
   /***concact***/
-
   .all-content.contact {
     padding: 10%;
   }
@@ -496,5 +493,20 @@ iframe {
   /**about me***/
   .description {
     margin-left: auto;
+  }
+
+  li>a img[src="img/flickr_p.jpg"] {
+    width: 60%;
+    height: 60%;
+  }
+
+  /*** end and bottom section***/
+  iframe {
+    width:  50%;
+    height: 30%;
+  }
+
+  .end_bg {
+    background-position: 550px 400px;
   }
 }
