@@ -52,13 +52,18 @@
   text-align:center;
   margin-bottom: 20%;
   color: black;
-  background-color: white;
-  opacity: 0.7;
-    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.carousel-caption {
+  color: black;
+  text-decoration:none;
+  background:white;
+  padding:2px;
+  opacity: 0.7
 }
 
 .carousel-caption a{
-  margin-left: 33%;
+  margin-left: 38%;
 }
 
 .carousel-caption p {
@@ -105,7 +110,7 @@ body {
   z-index: 1;
 }
 
-/**** About page ****/
+/**** About + Work ****/
 
 .tonioImage {
   display: inline-block;
@@ -155,7 +160,7 @@ body {
   margin: 20px;
 }
 
-#foto-text {
+.foto-text {
   text-align: center;
 }
 
@@ -170,23 +175,28 @@ body {
   top: 15%;
   display: none;
 }
-.proj-title {
-
-}
 
 .info {
   position: absolute;
-  top: 15%;
-  left: 22%;
-  color:#fff;
-  font-family:Futura;
+  width: 150px;
+  margin-left: 0px;
+  top: 25%;
+  left: 2px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family:Arial;
   text-transform:uppercase;
   font-weight:700;
-  letter-spacing:0.5em;
+  letter-spacing:0.8em;
   line-height:1.6;
 }
+
 .proj-title {
   font-weight:100;
+}
+
+.container-work h3 {
+  text-align: center;
 }
 
 /**** Contact page ****/
@@ -202,9 +212,9 @@ body {
  }
 
 .contact-square {
-  width: 400px;
+  width: 350px;
   height: 250px;
-  margin-left: 35%;
+  margin-left: 30%;
 }
 
 .all-content.contact {
@@ -223,11 +233,20 @@ body {
 #name,
 #email,
 .message-box {
-  opacity: 0.7;
-    filter: alpha(opacity=70); /* For IE8 and earlier */
+  background-color: transparent;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom-color: black;
+  font-style: italic;
+}
+
+#name:hover {
+
 }
 
 .form-group {
+  margin-top: -1.2%;
   display: inline-block;
   position: absolute;
   float: left;
@@ -240,13 +259,22 @@ body {
 }
 
 /**** FAQ & Learn-more page ****/
+
+#cv-button {
+  margin-left: 70%;
+}
+
+button.close {
+  padding: 1.5%;
+}
+
 .container.faq {
   width: 100%;
 }
 
 h1.learn-more {
   text-align: left;
-  margin-left:2%;
+  margin-left: 15px;
   display: inline-block;
 }
 
@@ -260,9 +288,9 @@ h1.learn-more {
 }
 
 #CV-Resume {
-  height: 500px;
+  height: 600px;
   width: 100%;
-  padding: 5px;
+  padding: 2px;
 }
 
 /***** end sections and bottom *****/
@@ -275,6 +303,7 @@ footer{
   display: block;
   margin: auto;
   width: 50%;
+  color: white;
 }
 
 .end_bg {
@@ -282,8 +311,17 @@ footer{
   width:100%;
   margin:0 0 10px;
   background-image: url("http://nelantone.bitballoon.com/img/albufer_bg.jpg");
-  background-position: 50% 70%;
+  background-position: 28% 70%;
   background-color: black;
+}
+
+.social-m {
+  display: inline-flex;
+}
+
+iframe {
+  width: 40%;
+  height: 40%;
 }
 
 /*****Typography*****/
@@ -291,16 +329,15 @@ footer{
 * { font-family: Futura, Helvetica, Arial, sans-serif; }
 
 /*****Media medium screens*****/
-@media (max-width: 990px) {
+@media (max-width: 768px) {
 
   /***index***/
-  .carousel-caption {
-    margin-bottom: 5%;
-  }
 
-  #portfolio {
-    background-color: white;
-    color: black;
+  .row {
+    display: block;
+  }
+  .carousel-caption {
+    display: none;
   }
 
   .container.index {
@@ -328,10 +365,16 @@ footer{
   .all-content.contact {
     padding-top: 0px;
     padding-bottom: 100%;
+    position: relative;
   }
 
   #my-name h3{
     font-size: 15px;
+  }
+
+  /***FAQ***/
+  #cv-button {
+    margin-left: 40%;
   }
 
   /***contact***/
@@ -361,8 +404,14 @@ footer{
     padding-left: 80%;
   }
 
+
   .form-group {
-    padding-left: 200px;
+    position: relative;
+    padding-left: 20%;
+  }
+  .contact-square {
+    width: auto;
+    margin-left: auto;
   }
 
   /*** end of section ***/
@@ -378,12 +427,13 @@ footer{
   /***font sizes***/
   * { font-size: 13px; }
 
-  h1 { font-size: 15px; }
+  h1 { font-size: 17px; }
 
   h2 { font-size: 14px; }
 
   h3 { font-size: 13px; }
 
+  .intro p,
   h4 { font-size: 13px; }
 
   h5 { font-size: 13px; }
@@ -419,13 +469,32 @@ footer{
     filter: alpha(opacity=00); /* For IE8 and earlier */
   }
 
-  .project-content {
-    padding-top: 800px;
-    }
-
   /*** end and bottom section***/
   iframe {
-    width: 100%;
+    width:  70%;
     height: 100%;
+  }
+
+  .end_bg {
+    background-position: 550px 400px;
+  }
+
+  /***concact***/
+
+  .all-content.contact {
+    padding: 10%;
+  }
+
+  .form-group {
+    position: relative;
+    padding-left: 0px;
+  }
+  .contact-square {
+    width: auto;
+    margin-left: auto;
+  }
+  /**about me***/
+  .description {
+    margin-left: auto;
   }
 }
